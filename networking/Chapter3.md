@@ -74,7 +74,7 @@ Connection management:
   3-way handshake:
   - Client sends SYNbit=1, SEQ=x
   - Server chooses init seq num, sends SYNbit=1, Seq=y, ACKbit=1; ACKnum=x+1
-  - Client sends Ack for SynAck: ACKbit=1, ACKnum=y+1
+  - Client sends Ack for SynAck: ACKbit=1, ACKnum=y+1, SYNBit = 0
   - Received ACK(y) indicates client is live
 
   Close a connection:
